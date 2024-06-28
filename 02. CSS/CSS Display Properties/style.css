@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+p
+{
+    display: inline;    /* iski vajah se ye width change nhi krga  */
+    height: 4000px;     /*To change h and w apply inline block */
+    width: 4000px;      
+    background-color: aquamarine;
+}
+
+a
+{
+    display: block;
+    margin-top: 30px;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}
+

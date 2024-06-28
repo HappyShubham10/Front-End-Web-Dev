@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+/* body{
+    height: 3000px;
+} */
+
+#car1
+{
+    height: 100px;
+    width: 200px;
+    background-color: gold;
+}
+
+
+#car2
+{
+    position: absolute;    
+    height: 150px;
+    width: 300px;
+    background-color: blueviolet;
+    
+}
+
+#car3
+{
+    height: 200px;
+    width: 400px;
+    background-color: greenyellow;
+}
+
+#big
+{
+    height: 300px;
+    width: 300px;
+    background-color: orangered;
+    margin-top: 20px;
+    position: relative;
+}
+
+#small
+{
+    height: 40px;
+    width: 40px;
+    background-color: aquamarine;
+    position: absolute;
+    left:70%;
+}
+
+/* #fix
+{
+    position: fixed; 
+    height: 200px;
+    width: 300px;
+    background-color: blue;
+} */

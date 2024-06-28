@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+html{
+    font-size: 60px;
+}
+
+/* #main{
+    for px
+    height: 400px;
+    width: 600px;
+    background-color: cornflowerblue;
+
+    for %
+    height: 100%;
+    width: 50%;
+
+    for vh-vw
+    height: 400px;
+    width: 300px;
+    background-color: yellow;
+
+} */
+
+
+/* #child{
+
+    for % 
+    height: 50%;
+    width: 100%;
+
+    for vh-vw
+    height: 100vh;
+    width: 100vw;
+    background-color: violet;
+} */
+
+#practice
+{
+    font-size: 60px;  
+    height: 2em;       /*(height will be 2*60px and width will be 3*60px) */
+    width: 3em;
+    background-color: yellowgreen;
+}
+
+
+#test
+{
+    font-size: 100px;
+    height: 2rem;      /* rem depends on root element font size i.e html  */
+    width: 3rem;       /*h=60px*2 and w=60px*3 */
+    background-color: aquamarine;
+    margin-top: 20px;
+}
+
+#check
+{
+    min-height: 200px;
+    max-height: 400px;
+    min-width: 300px;
+    max-width: 400px;  /*min/max used to set specific upper and lower limits */
+    height: 100px;
+    width: 800px;
+    background-color: cadetblue;
+    margin-top: 30px;
+
+}

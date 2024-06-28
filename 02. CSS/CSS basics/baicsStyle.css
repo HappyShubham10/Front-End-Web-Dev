@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+h2
+{
+    color: red;
+    font-family: Georgia;
+    margin-bottom: 30px;
+}
+
+p
+{
+    color:green;
+    font-family: Verdana;
+}
+
+#next
+{
+    color:crimson;
+    margin-top: 40px;
+    text-transform:capitalize;
+    text-decoration: underline;
+    line-height: 30px;
+    text-align: justify;
+    font-family:'Times New Roman';
+    font-weight: 700;
+
+}
+
+#div1
+{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    padding: 20px 30px;
+    text-align: center;
+    margin:40px 20px;
+    
+}
+
+#div2
+{
+    height: 300px;
+    width: 300px;
+    background-color: burlywood;
+    padding: 40px 20px;
+}
