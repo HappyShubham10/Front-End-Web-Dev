@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formsPractice2</title>
+</head>
+<body>
+    <h2>Job Application</h2>
+    
+    <form>
+        <label for="name">Name:</label>
+        <input id="name" type="text">
+        <br>
+        <br>
+
+        <label for="email">Email:</label>
+        <input id="email" type="email">
+        <br>
+        <br>
+
+        <label for="tel">Phone:</label>
+        <input id="tel" type="tel">
+        <br>
+        <br>
+
+        <label for="file">Resume:</label>
+        <input id="file" type="file">
+        <br>
+        <br>
+
+        <label for="counter">Experience (in years)</label>
+        <input id="counter" type="number" min="0" max="50">
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>Skills:</legend>
+
+            <input type="checkbox" id="checkbox1">
+            <label for="checkbox1">HTML</label>
+
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">CSS</label>
+            
+
+            <input type="checkbox" id="checkbox3">
+            <label for="checkbox3">JS</label>
+        </fieldset>
+        <br>
+        
+        <label for="highereducation">Higher Education:</label>
+        <select id="highereducation">
+            <option value="High School">High School</option>
+            <option value="12th">12th</option>
+            <option value="Btech">Btech</option>
+        </select>
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>Availability:</legend>
+
+            <input type="radio" id="radio1" name="selectone">
+            <label for="radio1">Full-time</label>
+            <br>
+            <br>
+
+            <input type="radio" id="radio2" name="selectone">
+            <label for="radio2">Part-time</label>
+            <br>  
+            <br> 
+        </fieldset>
+        <br>
+
+        <label for="textarea1">Addional Comments:</label>
+        <br>
+        <textarea name="textarea1" id="textarea1" cols="30" rows="10"></textarea>
+        <input type="submit" value="Submit Application"> 
+    </form>
+</body>
+</html>
