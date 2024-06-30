@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 html,body{
@@ -41,8 +42,35 @@ html,body{
     justify-content: center;
     padding-left: 4vw;
     letter-spacing: -2px;
+    position: relative;
 
 }
+
+#nav h1::after
+{
+    content: "©️";
+    font-size: 1.2vw;
+    font-weight: 300;
+    position: absolute;
+    top: 8%;
+    right:-7%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+#nav h1::before
+{
+    content: "model management";
+    font-size: 1vw;
+    font-weight: 400;
+    position: absolute;
+    bottom: 14%;
+    right:2%;
+    letter-spacing: 0.1px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
 
 #nav h2
 {
@@ -141,4 +169,229 @@ html,body{
     width: 3.2vw;
     object-fit: cover;
     margin-top: 1.3vw;
+}
+
+#scroll
+{
+    height: 50vh;
+    width: 100%;
+    white-space:nowrap;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+#container
+{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    margin-top: 4vw;
+    animation-name: animation;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#container img
+{
+    height: 80%;
+    width: 16.3%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    margin-right: 0.1vw;
+}
+
+@keyframes animation {
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#alphabet
+{
+    margin-top: 8vh;
+    height: 15vh;
+    width: 100%;
+    border-top: 1.5px solid #000;
+    border-bottom: 1.5px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.1vw;
+
+}
+
+#alphabet h5
+{
+    font-size: 1.4vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-style:italic;
+    border-bottom: 2px solid #000;
+    letter-spacing: 0.4vw;
+    margin-right: 2vw;
+    cursor: pointer;
+}
+
+#alphabet h6
+{
+    font-size: 1.2vw;
+    font-weight: 450;
+    text-transform: uppercase;
+    font-style:italic;
+    border-radius: 50%;
+    padding: .4vw .6vw;
+    letter-spacing: 0.4vw;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+#alphabet h6:hover
+{
+    border: 1px solid #000;
+}
+
+#page2
+{
+    height: 90%;
+    width: 100%;
+    margin-top: 5vh;
+    padding: 2vh 4vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+#part1
+{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1581403341630-a6e0b9d2d257?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fHBvcnRyYWl0JTIwbW9kZWxzfGVufDB8fDB8fHww);
+    background-size: cover;
+    background-position: top;
+}
+
+#part2
+{
+    height: 100%;
+    width: 50%;
+}
+
+#part2 img
+{
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 10% 20%;
+}
+
+#part3
+{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#part3 h3
+{
+    width: 50%;
+    height: 70%;
+}
+
+#part3 p
+{
+    width: 40%;
+    height: 60%;
+    font-weight: 500;
+}
+
+#page3
+{
+    height: 80%;
+    width: 100%;
+    padding: 0 2vw;
+
+}
+
+#page3>h1
+{
+    text-align: center;
+    font-family: monument;
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    margin-top: 10vh;
+    margin-bottom: 4vw;
+
+}
+
+.elem
+{
+    height: 15vh;
+    width: 100%;
+    border-top: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+    font-family: montserrat;
+}
+
+.elem:nth-last-child(1)
+{
+    border-bottom: 2px solid #000;
+}
+
+.elem h4
+{
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    font-family: 500;
+    width: 5%;
+    font-weight: 500;
+}
+
+.elem img
+{
+    height: 14vh;
+    width: 10vw;
+    border-radius: 50%;
+    opacity: 0;
+    position: absolute;
+    left: 10%;
+    transition: all ease 0.5s;
+    object-position: top;
+}
+
+.elem:hover img
+{
+    opacity: 1;
+    left: 25%;
+}
+.elem:hover
+{
+    background-color: #eaeaeae4;
+}
+.elem-part2
+{
+    width: 50%;
+}
+
+.elem-part2 h1
+{
+    font-weight: 500;
+}
+
+.elem-part2 h5
+{
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: .2vw;
 }
