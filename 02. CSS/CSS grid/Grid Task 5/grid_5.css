@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body
+{
+    height: 100%;
+    width: 100%;
+}
+
+#container
+{
+    height: 100vh;
+    background-color: yellowgreen;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+}
+
+.items
+{
+    background-color:white;
+    border: 2px solid black;
+    padding: 0.5vw;
+}
+

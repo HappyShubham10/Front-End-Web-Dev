@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body
+{
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Mobile */
+#container
+{
+    height: 100vh;
+    background-color: yellowgreen;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto auto auto;
+    row-gap: 1vh;
+    grid-template-areas: 
+    "header"
+    "navigation"
+    "main"
+    "sidebar"
+    "ads"
+    "footer";
+}
+
+.items
+{
+    background-color:white;
+    border: 2px solid black;
+    padding: 0.5vw;
+}
+
+#header{
+    grid-area: header;
+}
+
+#navigation{
+    grid-area: navigation;
+}
+
+#main{
+    grid-area: main;
+}
+
+#sidebar{
+    grid-area: sidebar;
+}
+
+#ads{
+    grid-area: ads;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+/* tablet */
+@media (min-width:720px) {
+    #container{
+        height: 100vh;
+        background-color: yellowgreen;
+        display: grid;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas: 
+        "header header header"
+        "navigation navigation navigation"
+        "sidebar  main main"
+        "ads footer footer";
+        row-gap: 1vw;
+        column-gap: 0.5vw;
+    }
+    
+}
+
+/* desktop */
+@media (min-width: 1020px) {
+    #container{
+        height: 100vh;
+        background-color: yellowgreen;
+        display: grid;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas: 
+        "header header header header"
+        "sidebar navigation navigation ads"
+        "sidebar  main main ads"
+        "footer footer footer footer";
+        row-gap: 1vw;
+        column-gap: 0.5vw;
+    }
+}
+
+/* Which should you choose?
+
+Using the 12 Column Grid:
+
+➕ Easy and fast to start
+➕ Easy to maintain for column-focused layouts
+➖ Difficult to arrange items in complex layouts
+
+You should use 12 Column Grid for less complex layouts that focus mainly on the arrangement of the columns.
+
+Using grid-template-areas:
+
+➕ Flexible for complex layouts
+➕ Easy to visualize
+➖ Takes more time to implement
+
+You should use grid-template-areas for more complex layouts where you need to care about positions or sizes of many elements. */

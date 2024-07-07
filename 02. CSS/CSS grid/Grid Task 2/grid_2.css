@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body
+{
+    height: 100%;
+    width: 100%;
+}
+
+#container
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: yellowgreen;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding: 10vw;
+    row-gap: 2px;
+    column-gap: 2vw;
+   
+
+}
+
+.items
+{
+    background-color: red;
+    border: 2px solid black;
+    padding: 1vw;
+}
