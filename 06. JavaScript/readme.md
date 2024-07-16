@@ -59,6 +59,9 @@
 
   - Create the **README.md** and create the repository
 
+<hr/>
+<br/>
+
 ## Lecture 4: Variables & Constants
 
 ![Var](/06.%20JavaScript/images/variables.jpg)
